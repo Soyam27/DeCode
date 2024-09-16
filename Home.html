@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Result Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+        }
+
+        .navbar {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .navbar p {
+            margin-left: 360px;
+            font-weight: 100;
+        }
+
+        .navbarin {
+            margin-left: 465px;
+        }
+
+        .navbar a {
+            color: #fff;
+            text-decoration: none;
+            margin: 10px;
+        }
+
+        .navbar a:hover {
+            color: rgb(140, 140, 255);
+        }
+
+        .aside {
+            background-color: #dedede;
+            padding: 20px;
+            width: 20%;
+            height: 100vh;
+            position: fixed;
+            top: 0;
+            left: 0;
+            box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.2);
+            /* add an inset shadow */
+            z-index: 2;
+            transition: left 0.5s;
+        }
+
+        .aside a:hover {
+            color: rgb(152, 152, 255);
+        }
+
+        .aside.hidden {
+            left: -25%;
+
+        }
+
+        .aside ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .aside li {
+            margin-bottom: 10px;
+            margin-top: 10px;
+        }
+
+        .aside a {
+            color: #333;
+            text-decoration: none;
+        }
+
+        .toggle-nav-aside {
+            border: none;
+            background-color: #4caf50;
+            border-radius: 5px;
+            height: 30px;
+            width: 100px;
+            text-align: center;
+            display: inline;
+            /* margin-left: 500px; */
+        }
+
+        .toggle-nav-aside:hover {
+            background-color: rgb(121, 121, 121);
+        }
+
+        .content {
+            padding: 20px;
+            height: 541px;
+            /* background-color: #ffffff; */
+            background-image: url(bg.jpg);
+            /* set the height to 100vh to ensure the image covers the entire section */
+        }
+
+        form {
+            display: inline;
+        }
+
+
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        p {
+            text-align: center;
+            font-size: 20px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin-bottom: 20px;
+            font-weight: 100px;
+            color: white;
+            text-shadow: 0.5px 0.5px #000000;
+        }
+
+        #text1 {
+            font-weight: 700;
+        }
+
+        .button-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .button {
+            background-color: #323335;
+            color: #fff;
+            /* padding: 10px 20px; */
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+            height: 35px;
+            width: 100px;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+
+        .button:hover {
+            background-color: #827f85;
+        }
+
+        .footer {
+            background-color: #333;
+            color: #fff;
+            padding: 1px;
+            height: 40px;
+            text-align: center;
+            clear: both;
+            /* margin-top: 162px; */
+            /* clear the float from the aside element */
+        }
+
+        .footer p {
+            display: inline;
+        }
+
+        .footer ul {
+            display: inline;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .footer li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        #pgabt {
+            text-align: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="navbarin">
+            <a href="DeCode/Home/Home.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            <button class="toggle-nav-aside">Toggle</button>
+            <p style="display: inline;">[Roll]</p>
+        </div>
+    </div>
+
+    <div class="aside">
+        <ul>
+            <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML"> HTML</a></li>
+            <hr>
+            <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS">CSS</a></li>
+            <hr>
+            <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">JS</a></li>
+            <hr>
+            <li><a href="https://developer.mozilla.org/en-US/docs/Glossary/Python">PYTHON</a></li>
+            <hr>
+            <li><a href="https://www.codecademy.com/resources/docs/c">C</a></li>
+            <hr>
+            <li><a href="https://developer.mozilla.org/en-US/docs/WebAssembly/C_to_Wasm">C++</a></li>
+            <hr>
+            <li><a href="https://developer.mozilla.org/en-US/docs/Glossary/Java">JAVA</a></li>
+            <hr>
+        </ul>
+    </div>
+
+    <div class="content">
+        <h1 style="color: #ffffff; font-weight: 1000;">DeCode!!</h1>
+        <p>Welcome [Name]!</p>
+        <!-- <p>[Roll Number]</p> -->
+        <p id="text1">Dive down in the world of coding</p>
+
+        <div class="button-container">
+            <form action="Video.html">
+                <button class="button">Learn</button>
+            </form>
+            <form action="Resources.html">
+                <button class="button">Other Codes</button>
+            </form>
+        </div>
+        <div id="pgabt"
+            style="background-color: #414141;color: whitesmoke; margin: 0px; padding: 0px;border-radius: 10px; box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.2); box-shadow: 3px 3px 3px rgb(255, 255, 255,0.08);;">
+            <h1>
+                What Can We Do!!
+            </h1>
+            <p style="font-size: medium;padding-bottom: 40px; padding-left: 20px;padding-right: 20px;">
+                Decode is a thriving community-driven platform that amasses a wide range of coding resources and encourages user contributions. Our goal is to create a central hub for coders of all backgrounds and expertise levels to learn, share, and evolve. With Decode, you can access a vast library of tutorials, documentation, and projects, as well as contribute your own resources and knowledge. Connect with fellow developers, collaborate on projects, and expand your coding skills in a supportive and dynamic environment. Decode is more than just a resource aggregator; it's a collaborative space designed to empower and inspire the coding community. Join us today and be a part of the Decode experience!
+            </p>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>Developed by:</p>
+        <ul>
+            <li>Debatree</li>
+            <li>And</li>
+            <li>Soyam</li>
+            <!-- add more developer names here -->
+        </ul>
+    </footer>
+    <script>
+        // Toggle Navigation Aside
+        const navAside = document.querySelector('.aside');
+        const toggleNavAsideButton = document.querySelector('.toggle-nav-aside');
+
+        toggleNavAsideButton.addEventListener('click', () => {
+            navAside.classList.toggle('hidden');
+        });
+        window.onload = function () {
+            navAside.classList.toggle('hidden');
+        }
+        // Add Tile Button
+        const addTileButton = document.querySelector('.add-tile');
+        // Get the name and roll number from the URL parameters
+        const urlParams = new URLSearchParams(window.location.search);
+        const name = urlParams.get('name');
+        const rollNumber = urlParams.get('roll_number');
+
+        // Display the name and roll number
+        document.querySelector('p:nth-child(2)').innerHTML = `Welcome ${name}`;
+        document.querySelector('.navbar p').innerHTML = `${rollNumber}`;
+    </script>
+</body>
+
+</html>
